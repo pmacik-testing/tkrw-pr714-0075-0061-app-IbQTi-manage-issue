@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ikqi
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0061-tenant/tkrw-pr714-0075-0061-app/devfile-sample-ikqi@sha256:478c8bd25b66dceda6ce6de5910f871737bd409d998b22b9785a6343211c5f3d
+        name: my-nodejs
+        resources: {}
+status: {}
